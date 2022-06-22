@@ -32,16 +32,16 @@
 import { useState } from 'react';
 import './Appa.css';
 import Alert from './components/Alert';
-// import About from './components/About';
+import About from './components/About';
 import Form from './components/Form';
 import Navbar from './components/Navbar';
 
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   // Link
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  // Link
+} from "react-router-dom";
 
 
 function App() {
@@ -81,24 +81,24 @@ function App() {
    
   return (
     <>
-    {/* <Router> */}
+    <Router>
     <Navbar title="AdcUtils" home="Home" about="About Us" mode={mode} EnableDarkMode={EnableDarkMode}/>
     <Alert alert={alert}/>
     <div className="container my-3">
-    {/* <Switch>
+    <Switch>
           <Route exact path="/about">
-            <About />
+            <About mode={mode} />
           </Route>
 
-          <Route exact path="/"> */}
+          <Route exact path="/">
      <Form showalert={showalert} heading="Enter Your Text" mode={mode} EnableDarkMode={EnableDarkMode}/>       
   
-          {/* </Route>
-        </Switch> */}
+          </Route>
+        </Switch>
     
     {/* <About/> */}
     </div>
-    {/* </Router> */}
+    </Router>
     </>
   );
 }
