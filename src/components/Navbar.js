@@ -7,7 +7,7 @@ export default function Navbar(props) {
   return (
     <nav className={`navbar navbar-expand-lg bg-${props.mode} text-${props.mode==='light' ? 'dark' : 'light'}`}>
   <div className="container-fluid">
-    <Link className={`navbar-brand text-${props.mode==='light' ? 'dark' : 'light'}`} to="/">{props.title}</Link>
+    <Link className={`navbar-brand text-${props.mode==='light' ? 'dark' : 'light'}`} to="#">{props.title}</Link>
     {/* <a className={`navbar-brand text-${props.mode==='light' ? 'dark' : 'light'}`} href="#">{props.title}</a> */}
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -15,7 +15,7 @@ export default function Navbar(props) {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link className={`nav-link active text-${props.mode==='light' ? 'dark' : 'light'}`} aria-current="page" to="/">{props.home}</Link>
+          <Link className={`nav-link active text-${props.mode==='light' ? 'dark' : 'light'}`} aria-current="page" to="/home">{props.home}</Link>
           {/* <a className={`nav-link active text-${props.mode==='light' ? 'dark' : 'light'}`} aria-current="page" href="#">{props.home}</a> */}
         </li>
         <li className="nav-item">

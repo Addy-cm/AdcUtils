@@ -90,7 +90,7 @@ function App() {
             <About mode={mode} />
           </Route>
 
-          <Route exact path="/">
+          <Route exact path="/home">
      <Form showalert={showalert} heading="Enter Your Text" mode={mode} EnableDarkMode={EnableDarkMode}/>       
   
           </Route>
